@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "src/test/resources/feature",
         glue = "steps",
-        tags={"@smoke1"}
+        tags={"@smoke"}
 
 		)
 

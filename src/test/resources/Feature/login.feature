@@ -13,12 +13,12 @@ Feature: login feature
     Examples:
     |loginid|Password|
     |9665571930|parag#9665|
-    |9637186818|abh!neetM7890|
+   
     
     @smoke1
   Scenario Outline: login with valid loginid and password
   
-	  	When User click on loginBtn
+	When User click on loginBtn
     And User enters loginid "<loginid>"
     And User click on Continue button
     And User enters Password "<Password>"
