@@ -1,6 +1,7 @@
 package steps;
 
 import action.LoginAction;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import locator.LoginLocators;
@@ -65,5 +66,19 @@ public class LoginSteps {
 	@Then("^User is successfully logged in$")
 	public void user_is_displayed_login_screen() throws Throwable {
 		System.out.println("Successfull Login!!");
+	}
+	@When("^User move mouse pointer on Hello Username$")
+	public void moveOver_on_hello() {
+		System.out.println("Mouse over on Hello Parag");
+		action.mouseOver_on_Hello1();
+	}
+	@And("^User cliks on logout$")
+	public void clickOn_Logout() {
+		System.out.println("User cliks on logout");
+		action.clickOn_Logout1();
+	}
+	@Then("^User logged out from account")
+	public void user_loggedOut() {
+		System.out.println("User logged out from account");
 	}
 }

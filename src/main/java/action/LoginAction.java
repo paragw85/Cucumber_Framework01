@@ -1,8 +1,10 @@
 package action;
 
+import org.openqa.selenium.interactions.Actions;
+
 import locator.LoginLocators;
 
-public class LoginAction {
+public class LoginAction extends BaseClass {
 
 	LoginLocators locator=new LoginLocators();
 	public void Login(){
@@ -29,5 +31,15 @@ public class LoginAction {
 	public void user_clicks_onSignIn() throws Throwable {
 		System.out.println("Click Login button");
 		locator.login.click();
+	}
+	public void mouseOver_on_Hello1() {
+		System.out.println("LogOut Starts");
+		Actions action1=new Actions(driver );
+		action1.moveToElement(locator.logoutBtn).build().perform();
+		
+	}
+	public void clickOn_Logout1() {
+		System.out.println("Logout Click");
+		locator.logout.click();
 	}
 }

@@ -9,6 +9,9 @@ Feature: login feature
     And User enters Password "<Password>"
     And User clicks on Login button
     Then User is successfully logged in
+    When User move mouse pointer on Hello Username
+    And User cliks on logout
+    Then User logged out from account
     
     Examples:
     |loginid|Password|

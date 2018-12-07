@@ -26,6 +26,12 @@ public class LoginLocators extends BaseClass{
 	@FindBy(xpath="//input[@id='signInSubmit']")
 	public WebElement login;
 	
+	@FindBy(xpath="//span[text()='Hello, Parag']")
+	public WebElement logoutBtn;
+	
+	@FindBy(xpath="//*[@id='nav-item-signout']/span")
+	public WebElement logout;
+	
 	//@FindBy(xpath="//*[@id='nav-item-signout']/span")
 	//public WebElement logout;
 }
