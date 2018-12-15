@@ -21,8 +21,9 @@ import cucumber.api.junit.Cucumber;
 		)
 
 public class RunTest {
+	
 	 @AfterClass
-	    public static void teardown() {
+	 public static void teardown() {
 	        Reporter.loadXMLConfig(new File("src/test/resources/conf/extent-config.xml"));
 	       
 	    }
